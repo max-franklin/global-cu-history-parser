@@ -76,12 +76,12 @@ class AccountEntry:
 
     def set_matchers(self) -> None:
         self.matchers = [
-            { "category": "Groceries", "regex": re.compile(r"SAFEWAY|TARGET|(BROWN JUG)|(WALGREENS)|(ALASKA MILL FEED)|(JOHNNY'S PRODUCE)|(SCHNUCKS)|( CARRS )|(FRED-MEYER)|( FRED MEY )|(NEW SAGAYA)", re.IGNORECASE)},
+            { "category": "Groceries", "regex": re.compile(r"COSTCO|SAFEWAY|TARGET|(BROWN JUG)|(WALGREENS)|(ALASKA MILL FEED)|(JOHNNY'S PRODUCE)|(SCHNUCKS)|( CARRS )|(FRED-MEYER)|( FRED MEY )|(NEW SAGAYA)", re.IGNORECASE)},
             { "category": "Income", "regex": re.compile(r"GCI COMMUNICATIO TYPE: DIRECT DEP CO: GCI COMMUNICATIO DATA", re.IGNORECASE)},
-            { "category": "Eating Out", "regex": re.compile(r"(THE BAKE SHOP)|(HOUSE OF BREAD)|(EL JEFE TACO JOINT)|(EL GREEN GO)|(Sushi Ai)|(EL CATRIN)|(GREAT HARVEST BREAD)|(JOURNEY CAFE KAILUA KONA)|(SCOTTISH ARMS)|(KONA BREWING HAWAII)|(SNOW CITY CAFE)|(DISH 3 SEA)|(SPENARD ROADHOUSE)|(FRESH CUP COFFEE)|(YAK & YETI CAFE)|(RAY'S PLACE)|(DENALI PRETZELS)|(Square One Brewery)|(NAMASTE SHANGRI-LA)|(HUDSON ST)|(ROCKWELL BEER COMPANY)|(THE WINE & CHEESE PLAC)|(LA BODEGA)|(BEAR TOOTH)|(MOOSES TOOTH)|KALADI|STARBUCKS|EUROCAFE|PIKE&PINE|HUDSONNEWS|(RECKLESS N)|(MIDNIGHT MOON)|(THE PURPLE MOOSE ESPRESS)|(WILD SCOOPS)", re.IGNORECASE)},
+            { "category": "Eating Out", "regex": re.compile(r"(MCDONALD)|(FIRE ISLAND)|(DOMINO'S)|(49TH STATE 'CONE-X')|(KRISPY KREME)|(THE BAKE SHOP)|(HOUSE OF BREAD)|(EL JEFE TACO JOINT)|(EL GREEN GO)|(Sushi Ai)|(EL CATRIN)|(GREAT HARVEST BREAD)|(JOURNEY CAFE KAILUA KONA)|(SCOTTISH ARMS)|(KONA BREWING HAWAII)|(SNOW CITY CAFE)|(DISH 3 SEA)|(SPENARD ROADHOUSE)|(FRESH CUP COFFEE)|(YAK & YETI CAFE)|(RAY'S PLACE)|(DENALI PRETZELS)|(Square One Brewery)|(NAMASTE SHANGRI-LA)|(HUDSON ST)|(ROCKWELL BEER COMPANY)|(THE WINE & CHEESE PLAC)|(LA BODEGA)|(BEAR TOOTH)|(MOOSES TOOTH)|KALADI|STARBUCKS|EUROCAFE|PIKE&PINE|HUDSONNEWS|(RECKLESS N)|(MIDNIGHT MOON)|(THE PURPLE MOOSE ESPRESS)|(WILD SCOOPS)", re.IGNORECASE)},
             { "category": "Car Insurance", "regex": re.compile(r"STATE FARM|GEICO", re.IGNORECASE)},
             { "category": "Rent/Mortgage/HOA", "regex": re.compile(r"(Real Estate Solu)|(NEWREZ-SHELLPOIN)|(ROY BRILEY HOA)", re.IGNORECASE)},
-            { "category": "Home Goods/Renovation/Maintenance", "regex": re.compile(r"(ANDYS ACE HDWE)|LOWE'S", re.IGNORECASE)},
+            { "category": "Home Goods/Renovation/Maintenance", "regex": re.compile(r"(APPLIANCE PARTS COMPANY)|(VENT DOCTORS OF ALASK)|(ANDYS ACE HDWE)|LOWE'S", re.IGNORECASE)},
             { "category": "Paypal", "regex": re.compile(r"PAYPAL", re.IGNORECASE)},
             { "category": "Global CU Acc Transfer", "regex": re.compile(r"ULTRABRANCH-PC TRANSFER", re.IGNORECASE)},
             { "category": "Bank of America CC Debt", "regex": re.compile(r"BK OF AMER", re.IGNORECASE)},
@@ -91,12 +91,14 @@ class AccountEntry:
             { "category": "Utilities", "regex": re.compile(r"(GCI BILLING)|(CHUGACH ELECTRIC)|(CHUGACHELECTRIC)|ENSTAR", re.IGNORECASE)},
             { "category": "Gas/Parking", "regex": re.compile(r"(MCKINLEY PARKING)|(FRED M FUEL)|(HOLIDAY STATIONS)|(SPEEDWAY)|(CHEVRON)", re.IGNORECASE)},
             { "category": "Car Maintenance", "regex": re.compile(r"(CONTINENTAL SUBARU)", re.IGNORECASE)},
-            { "category": "Personal", "regex": re.compile(r"(NORTHERN KNIVES)|(BARNESNOBLE)|(BEST BUY)|BOSCO`S|(FIRST LIGHT BOOKSTORE HONOLULU)|(BESTBUY)|(DIVE ALASKA)|(Nintendo)|(ALASKA ROCK GYM)|( REI )|(AK PARKS PAY STATIONS)|(ST LOUIS ZOO)|(Classic Toys)", re.IGNORECASE)},
-            { "category": "Legal", "regex": re.compile(r"(ROCKETLAW)", re.IGNORECASE)},
-            { "category": "Pets", "regex": re.compile(r"(VCA ANIMAL HOSP)|PETSMART|PRETTYLITTER", re.IGNORECASE)},
+            { "category": "Personal", "regex": re.compile(r"Kindle|(EVE ONLINE)|(NORTHERN KNIVES)|(BARNESNOBLE)|(BEST BUY)|BOSCO`S|(FIRST LIGHT BOOKSTORE HONOLULU)|(BESTBUY)|(DIVE ALASKA)|(Nintendo)|(ALASKA ROCK GYM)|( REI )|(AK PARKS PAY STATIONS)|(ST LOUIS ZOO)|(Classic Toys)", re.IGNORECASE)},
+            { "category": "Legal", "regex": re.compile(r"ALASKAVITALREC|ROCKETLAW", re.IGNORECASE)},
+            { "category": "Pets", "regex": re.compile(r"(VCA ANIMAL HOSP)|PETSMART|PRETTYLITTER|PETCO", re.IGNORECASE)},
             { "category": "Travel", "regex": re.compile(r"(ST. LOUIS ART MUSEUM)|(HAWAII TROPICAL BOTANICAL)|(ANC AIRPORT PARKING)|(ANELAKAI ADVENTURE)|(ALASKA AIR)", re.IGNORECASE)},
             { "category": "Car Payment Debt", "regex": re.compile(r"(TD AUTO FINANCE)", re.IGNORECASE)},
             { "category": "IRS", "regex": re.compile(r"(IRS TREAS)", re.IGNORECASE)},
+            { "category": "Baby Stuff", "regex": re.compile(r"BABYBJORN|GROVIA", re.IGNORECASE)},
+            { "category": "Student Loans", "regex": re.compile(r"STUDNTLOAN|(STUDENT LN)", re.IGNORECASE)},
         ]
 
     def set_category_type(self) -> None:
